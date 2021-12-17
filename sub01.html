@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Yunju's Portfolio</title>
+    <link rel="stylesheet" href="master.css">
+    <link rel="stylesheet" href="aos.css">
+    
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  </head>
+
+  <body>
+
+    <header class="sub">
+      <nav>
+        <ul>
+          <li class="bt_o" style="cursor:pointer;"><a onclick="fnMove('1')">ABOUT</a></li>
+          <li class="bt"><a href="sub02.html">GRAPHIC</a></li>
+          <li class="logo"><a href="index.html"><img src="img/00_01_logo.png" alt=""></a></li>
+          <li class="bt"><a href="sub03.html">EDITORIAL</a></li>
+          <li class="bt"><a href="sub04.html">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <div class="sub01_cont" id="anchor1">
+        <div class="sub01_cont_01" data-aos="zoom-out" data-aos-delay="200" data-aos-duration="600">
+          <p class="tit1">ABOUT</p>
+          <img src="img/01_01.png" alt="">
+        </div>
+
+        <div class="sub01_cont_02">
+          <p class="tit2" data-aos="fade-up" data-aos-delay="400" data-aos-anchor-placement="top-bottom" data-aos-duration="1200">PROFILE</p>
+          <p class="text1" data-aos="fade-up" data-aos-delay="400" data-aos-anchor-placement="top-bottom" data-aos-duration="1200">LEE YUN JU<br>010 5605 4984<br>sohaho@naver.com</p>
+        </div>
+
+        <div class="sub01_cont_03">
+          <p class="tit2" data-aos="fade-up" data-aos-delay="400" data-aos-anchor-placement="top-bottom" data-aos-duration="1200">SKILL</p>
+          <p class="text1" data-aos="fade-up" data-aos-delay="400" data-aos-anchor-placement="top-bottom" data-aos-duration="1200">Photoshop / Illustrator<br>Indesign / XD / HTML / CSS</p>
+        </div>
+
+        <div class="sub01_cont_04">
+          <p class="tit2" data-aos="fade-up" data-aos-delay="400" data-aos-anchor-placement="top-bottom" data-aos-duration="1200">LICENSE</p>
+          <p class="text1" data-aos="fade-up" data-aos-delay="400" data-aos-anchor-placement="top-bottom" data-aos-duration="1200">2020 GTQ(그래픽기술자격) 1급 <br> 2020 GTQi(그래픽기술자격 일러스트) 1급</p>
+        </div>
+
+        <div class="sub01_cont_05">
+          <img src="img/01_02.png" alt="" data-aos="zoom-out" data-aos-delay="200" data-aos-duration="1200">
+          <p class="tit5" data-aos="fade-up" data-aos-delay="400" data-aos-anchor-placement="top-bottom" data-aos-duration="1200"><b>상상</b>과 <b>창조</b> 그리고 <b>도전</b></p>
+          <p class="text1" data-aos="fade-up" data-aos-delay="400" data-aos-anchor-placement="top-bottom" data-aos-duration="1200">꾸준히 앞으로 나아가는 디자인이 되도록<br><b>상상</b>하고 <b>창조</b>하고 <b>도전</b>하며 끊임없이 노력하겠습니다.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>COPYRIGHT ⓒ 2021. LEEYUNJU. ALL RIGHTS RESERVED.</footer>
+
+    <script src="aos.js"></script>
+    <script>AOS.init({});</script>
+
+    <script type="text/javascript" src="jquery-latest.js"></script>
+    <script>
+    function fnMove(seq){var offset = $("#anchor" + seq).offset();
+    $('html, body').animate({scrollTop : offset.top},500);}
+    </script>
+
+  </body>
+
+</html>
